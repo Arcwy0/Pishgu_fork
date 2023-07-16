@@ -32,7 +32,7 @@ scikit-learn==0.24.1
 scipy==1.5.4
 six==1.15.0
 thop==0.0.31.post2001170342
-threadpoolctl
+threadpoolctl==2.1.0
 torch-cluster==1.6.0
 torch-geometric==2.0.4
 torch-scatter==2.0.9
