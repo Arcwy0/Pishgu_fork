@@ -17,8 +17,8 @@ services:
         restart: always
         volumes:
             - type: bind
-              source: ${PRODUCTION_PATH}/../data
-              target: /home/pishgu/Pishgu_fork/data
+              source: ${PRODUCTION_PATH}/../datasets
+              target: /home/pishgu/Pishgu_fork/datasets
             - /dev:/dev:rw
             - /dev:/dev \
         command: /bin/sh
