@@ -13,9 +13,9 @@ RUN
 RUN apt-get update && apt-get install -y \
         wget vim usbutils \
         ffmpeg libsm6 libxext6 \
-        libboost-dev -y \
+        libboost-dev libhdf5-dev llvm-8 \
         && rm -rf /var/lib/apt/lists/*
-
+RUN export LLVM_CONFIG=/usr/bin/llvm-config-8
 WORKDIR /home/${USER}
 USER root
 RUN cd /home/${USER} && chown -R ${UID}:${GID} ./
